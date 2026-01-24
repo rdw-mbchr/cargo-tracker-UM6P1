@@ -16,7 +16,7 @@ pipeline {
         stage('Build & Test with Coverage') {
             steps {
                 script {
-                    def mvnHome = tool name: 'Maven3', type: 'maven'
+                    def mvnHome = tool name: 'Maven-3.9', type: 'maven'
                     bat "\"${mvnHome}\\bin\\mvn\" clean verify"
                 }
             }
