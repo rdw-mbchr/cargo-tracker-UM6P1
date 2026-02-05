@@ -10,6 +10,10 @@ pipeline {
         SONAR_TOKEN = credentials('sonar-token')
         MAVEN_HOME = tool name: 'Maven-3.9', type: 'maven'
     }
+    tools {
+    git 'Default'
+    }
+
 
     stages {
 
